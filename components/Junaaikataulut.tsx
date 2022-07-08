@@ -1,5 +1,5 @@
 import dayjs from 'dayjs'
-import { Train } from "../data/types"
+import { Train } from "../pages/data/types"
 
 type Props = {
   data: Train[]

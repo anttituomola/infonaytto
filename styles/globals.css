@@ -53,3 +53,9 @@ h1 {
   border: none;
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .elements {
+    grid-template-columns: 1fr;
+  }
+}

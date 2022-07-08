@@ -1,10 +1,10 @@
 import dayjs from 'dayjs'
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
-import Junaaikataulut from './components/Junaaikataulut'
-import Perhekalenteri from './components/Perhekalenteri'
-import Saaennuste from './components/Saatila'
-import Sadetutka from './components/Sadetutka'
+import Junaaikataulut from '../components/Junaaikataulut'
+import Perhekalenteri from '../components/Perhekalenteri'
+import Saaennuste from '../components/Saatila'
+import Sadetutka from '../components/Sadetutka'
 import { Train, Weather } from './data/types'
 
 type Props = {

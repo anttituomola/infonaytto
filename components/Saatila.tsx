@@ -1,4 +1,4 @@
-import { Weather } from '../data/types'
+import { Weather } from '../pages/data/types'
 
 type Props = {
     data: Weather
