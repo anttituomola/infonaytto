@@ -13,13 +13,20 @@ type Props = {
 }
 
 const Home: NextPage<Props> = (props) => {
+  setInterval(() => {
+    window.location.reload()
+  }
+  , (1000 * 60))
+
   return (
     <div className={styles.container}>
-      <h1>Infonäyttö</h1>
-      <Saaennuste data={props.weatherData}/>
-      <Sadetutka />
-      <Perhekalenteri />
-      <Junaaikataulut data={props.trainData} />
+      <h1>{dayjs().format("dddd DD.MM.YYYY klo HH:mm")}</h1>
+      <div className="elements">
+        <div className='element'><Saaennuste data={props.weatherData} /></div>
+        <div className='element'><Sadetutka /></div>
+        <div className='element'><Perhekalenteri /></div>
+        <div className='element'><Junaaikataulut data={props.trainData} /></div>
+      </div>
     </div>
   )
 }
