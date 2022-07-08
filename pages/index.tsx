@@ -5,9 +5,10 @@ import Junaaikataulut from './components/Junaaikataulut'
 import Perhekalenteri from './components/Perhekalenteri'
 import Saaennuste from './components/Saaennuste'
 import Sadetutka from './components/Sadetutka'
+import { Train } from './data/types'
 
 type Props = {
-  trainData: {}[]
+  trainData: Train[]
 }
 
 const Home: NextPage<Props> = (props) => {
