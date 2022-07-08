@@ -5,7 +5,7 @@ import Junaaikataulut from '../components/Junaaikataulut'
 import Perhekalenteri from '../components/Perhekalenteri'
 import Saaennuste from '../components/Saatila'
 import Sadetutka from '../components/Sadetutka'
-import { Train, Weather } from './data/types'
+import { Train, Weather } from '../data/types'
 
 type Props = {
   trainData: Train[],
