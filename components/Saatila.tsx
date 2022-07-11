@@ -13,7 +13,7 @@ const Saaennuste = ({ data }: Props) => {
             <h2>Sää tänään</h2>
             <span>Lämpötila: {data.forecast.forecastday[0].day.mintemp_c} - {data.forecast.forecastday[0].day.maxtemp_c} °C</span><br />
             <span>Sateen mahdollisuus: {data.forecast.forecastday[0].day.daily_chance_of_rain}%</span><br />
-            {data.forecast.forecastday[0].day.daily_chance_of_rain ? `Sademäärä: ${data.forecast.forecastday[0].day.totalprecip_mm} mm ${<br />}`: ""}
+            {data.forecast.forecastday[0].day.daily_chance_of_rain ? `Sademäärä: ${data.forecast.forecastday[0].day.totalprecip_mm} mm`: ""}
         </>
     )
 }
