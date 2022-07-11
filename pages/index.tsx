@@ -6,6 +6,7 @@ import Perhekalenteri from '../components/Perhekalenteri'
 import Saaennuste from '../components/Saatila'
 import Sadetutka from '../components/Sadetutka'
 import { Train, Weather } from '../data/types'
+import { useRouter } from 'next/router'
 
 type Props = {
   trainData: Train[],
@@ -13,10 +14,12 @@ type Props = {
 }
 
 const Home: NextPage<Props> = (props) => {
+  const router = useRouter()
+
   setInterval(() => {
-    window.location.reload()
+    router.replace(router.asPath)
   }
-  , (1000 * 60))
+    , (1000 * 60))
 
   return (
     <div className={styles.container}>
