@@ -48,7 +48,7 @@ export async function getServerSideProps() {
   const trainData = await trainResponse.json()
 
   // Weather data
-  const weatherApiKey = "caa754609a724c349e362100220807"
+  const weatherApiKey = process.env.weatherApiKey
   const weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=Tampere&aqi=yes`)
   const weatherData = await weatherResponse.json()
 
